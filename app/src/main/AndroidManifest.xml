@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crime_monitoring_app">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.CrimeMonitoringApp">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao"/> <!-- Your actual API key -->
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReportCrimeActivity"
+            android:exported="true" />
+        <activity android:name=".ViewCrimesActivity"
+            android:exported="true" />
+        <activity android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity android:name=".LoginActivity"
+            android:exported="true" />
+        <activity android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity android:name=".UserProfileActivity"
+            android:exported="true" />
+        <!-- Adding HeatmapActivity -->
+        <activity android:name=".HeatmapActivity"
+            android:exported="true" />
+    </application>
+</manifest>

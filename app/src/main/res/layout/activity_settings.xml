@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Toolbar with Home Button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Settings"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_home" />
+
+    <!-- TextView for displaying the settings label -->
+    <TextView
+        android:id="@+id/settingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Switch for enabling/disabling notifications -->
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsTextView"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:text="Enable Notifications"
+        android:textColor="@color/black" />
+
+    <!-- Switch for changing the app theme -->
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notificationSwitch"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:text="Dark Theme"
+        android:textColor="@color/black" />
+
+    <!-- Switch for enabling/disabling location tracking -->
+    <Switch
+        android:id="@+id/locationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/themeSwitch"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp"
+        android:text="Enable Location Tracking"
+        android:textColor="@color/black" />
+
+    <!-- EditText for changing the username -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationSwitch"
+        android:layout_marginTop="24dp"
+        android:hint="Change Username"
+        android:minHeight="48dp"
+        android:textColor="@color/black" />
+
+    <!-- Button for saving the username -->
+    <Button
+        android:id="@+id/saveUsernameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Username"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"/>
+
+    <!-- Spinner for selecting the preferred language -->
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveUsernameButton"
+        android:layout_marginTop="24dp"
+        android:minHeight="48dp" />
+
+    <!-- Button for navigating back to the main home page -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_below="@id/languageSpinner"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"/>
+</RelativeLayout>

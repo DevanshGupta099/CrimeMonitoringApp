@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Home Screen"
+        app:titleTextColor="@android:color/white"
+        tools:ignore="MissingConstraints">
+
+        <!-- Profile Icon in the Toolbar -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_default_profile"
+            android:contentDescription="Profile Icon" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Emergency Button -->
+    <Button
+        android:id="@+id/emergencyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="EMERGENCY SOS"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Report Crime Button -->
+    <Button
+        android:id="@+id/reportCrimeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Report Crime"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"
+        app:layout_constraintTop_toBottomOf="@id/emergencyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- View Crimes Button -->
+    <Button
+        android:id="@+id/viewCrimesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Crimes"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"
+        app:layout_constraintTop_toBottomOf="@id/reportCrimeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Heatmap/Map Button -->
+    <Button
+        android:id="@+id/heatmapButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Heatmap"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"
+        app:layout_constraintTop_toBottomOf="@id/viewCrimesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"
+        app:layout_constraintTop_toBottomOf="@id/heatmapButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#424242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Crime-Monitoring-App</string>
+    <string name="crime_type_prompt" translatable="false">Crime Type</string>
+    <string name="profile_icon">Profile Icon</string>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>German</item>
+    </string-array>
+    <string-array name="crime_types">
+        <item>Theft</item>
+        <item>Assault</item>
+        <item>Vandalism</item>
+        <item>Fraud</item>
+        <item>Burglary</item>
+        <item>Robbery</item>
+        <item>Arson</item>
+        <item>Drug Offense</item>
+        <item>Cybercrime</item>
+        <item>Molestation</item>
+        <item>Murder</item>
+    </string-array>
+</resources>
